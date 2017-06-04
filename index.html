@@ -1,0 +1,147 @@
+<!doctype html>
+
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	
+	<title>My Projects portfolio</title>
+	<!--Stylesheet used for the social media icons-->
+	<link rel="stylesheet" href="css/zocial.css">
+	<!--Main stylesheet for the -->
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+	
+</head>
+
+<body>
+	<!--This header is the main header of the page, containing the logo and name-->
+	<header class="flex-container main-header">
+		<!--This div contains the logo of the page. An svg image of the Avengers logo was used-->
+		<div class="logo">
+			<img class="logo-img" src="images/logo.svg" alt="logo">
+		</div>
+		
+		<!--This div contains the profile name and the profile description-->
+		<div class="title-name">
+			<h1 class="prof-name">WICUS VAN DER WESTHUIZEN</h1>
+			<h3 class="prof-description">FULL STACK DEVELOPER</h3>
+		</div>
+	</header>
+	
+	<!--The first section contains the main picture of the page-->
+	<section class="big-picture">
+		<!--The picture element contains three sources for different display sizes-->
+		<picture class="picture-div">
+			<source media="(min-width: 900px)" srcset="images/fswebdev-large-2x.jpg" type="image/jpg">
+			<source media="(min-width: 600px)" srcset="images/fswebdev-medium.jpg" type="image/jpg">
+			<img class="main-poster" src="images/fswebdev-small.jpg" alt="Full stack web developer illustration">
+		</picture>
+	</section>
+	
+	<!--The second section contains the rest of the page, including featured project headings and featured projects-->
+	<section class="flex-container project-catalog">
+		<!--This header contains the heading for the featured projects-->
+		<header class="projects-header">
+			<h2 class="proj-title">Featured Work</h2>
+		</header>
+		
+		<!--The inner section contains the three featured projects-->
+		<section class="projects-container">
+			<!--There are three project divs, each containing a featured project-->
+			<div class="project">
+				<!--Each figure contains three image sources in a picture element, with an inner div containing a caption and description-->
+				<figure class="proj-fig">
+					<picture class="picture-div">
+						<source media="(min-width: 900px)" srcset="images/interstellar-large-2x.jpg" type="image/jpg">
+						<source media="(min-width: 600px)" srcset="images/interstellar-medium.jpg" type="image/jpg">
+						<img id="first-poster" class="poster" src="images/interstellar-small.jpg" alt="Interstellar movie poster for my movie website">
+					</picture>
+					
+					<figcaption class="fig-caption">
+						<h3 class="caption-title">MY MOVIE WEBSITE</h3>
+						<p class="proj-description">
+							This website was my first project that forms part of the Full Stack web developer Nanodegree.
+							The website contains a list of my six favourite movies, with a description, IMDB rating, and 
+							movie trailer for each movie. An IMDB python package is used to extract the rating from the 
+							IMDB servers.
+						</p>
+					</figcaption>
+				</figure>
+				
+				<!--There are three github button divs, each containing a button linking to Github-->
+				<div class="git-but">
+					<a href="" class="zocial github">Fork me on Github</a>
+				</div>
+			</div>
+			
+			<div class="project">
+				<figure class="proj-fig">
+					<picture class="picture-div">
+						<source media="(min-width: 900px)" srcset="images/centralpark-large-2x.jpg" type="image/jpg">
+						<source media="(min-width: 600px)" srcset="images/centralpark-medium.jpg" type="image/jpg">
+						<img class="poster" src="images/centralpark-small.jpg" alt="A 3D map of a neighborhood">
+					</picture>
+					
+					<figcaption class="fig-caption">
+						<h3 class="caption-title">NEIGHBORHOOD MAP</h3>
+						<p class="proj-description">
+							This will be a single page application that will feature a map of my neighborhood. Functionality 
+							will be added to this map, including highlighted locations, third-party data about those locations 
+							and various ways to browse the content.	
+						</p>
+					</figcaption>
+				</figure>
+				
+				<div class="git-but">
+					<a href="#" class="zocial github">Fork me on Github</a>
+				</div>
+			</div>
+			
+			<div class="project">
+				<figure class="proj-fig">
+					<picture class="picture-div">
+						<source media="(min-width: 900px)" srcset="images/catalog-large-2x.jpg" type="image/jpg">
+						<source media="(min-width: 600px)" srcset="images/catalog-medium.jpg" type="image/jpg">
+						<img id="last-poster" class="poster" src="images/catalog-small.jpg" alt="A catalog of gloves">
+					</picture>
+					
+					<figcaption class="fig-caption">
+						<h3 class="caption-title">ITEM CATALOG</h3>
+						<p class="proj-description">
+							An application will be developed that provides a list of items within a variety of categories as well 
+							as provide a user registration and authentication system. Registered users will then have the ability 
+							to post, edit and delete their own items.
+						</p>
+					</figcaption>
+				</figure>
+				
+				<div class="git-but">
+					<a href="#" class="zocial github">Fork me on Github</a>
+				</div>
+			</div>
+			
+		</section>
+	</section>
+	
+	<!--The social media footer contains the links to all the different social media profiles-->
+	<footer class="soc-media">
+		<h4 class="foot-headings">Find me on Social Media:</h4>
+		<!--The following links use the zocial css file to create social media buttons-->
+		<a href="https://www.facebook.com/wicusv?ref=bookmarks" class="zocial facebook icon">My facebook profile</a>
+		<a href="https://twitter.com/WWicus92" class="zocial twitter icon">Follow me on twitter</a>
+		<a href="https://www.linkedin.com/in/wicus-van-der-westhuizen-404aa7ab" class="zocial linkedin icon">View my linkedIn profile</a>
+		<a href="https://plus.google.com/105572125799920856301" class="zocial googleplus icon">View my google+ profile</a>
+		<a href="https://www.instagram.com/wicus199/?hl=en" class="zocial instagram icon">Follow me on Instagram</a>
+
+		<h4 class="foot-headings">Get in touch:</h4>
+		<!--The following link links to the email address to contact the page owner-->
+		<a href="mailto:wicwebdevelopment@gmail.com" class="email">wicwebdevelopment@gmail.com</a>
+	</footer>
+	
+</body>
+
+</html>
