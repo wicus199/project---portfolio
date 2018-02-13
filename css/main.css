@@ -38,6 +38,7 @@ body {
 	width: 100%;
 	text-align: center;
 	font-family: 'Noto Serif', serif;
+	display: flex;
 }
 
 /*Profile heading name*/
@@ -199,15 +200,21 @@ body {
 	}
 
 	.title-name {
-		width: 70%;
+		width: 60%;
+		align-items: center;
+	}
+
+	.prof-description {
+		font-size: 25px;
 	}
 
 	.logo {
-		width: 30%;
+		width: 40%;
 	}
 
 	.logo-img {
 		margin: 0;
+		width: 300px;
 	}
 
 	/*
