@@ -5,7 +5,7 @@
 
 /*Change background color to a light grey*/
 body {
-	background-color: #ccc;
+	background-color: white;
 }
 
 /*Container for css flex property*/
@@ -17,38 +17,37 @@ body {
 /*First header on page containing logo and name*/
 .main-header {
 	border-bottom: 3px solid #9e9e9e;
-	margin-bottom: 1%;
+	margin-bottom: 5px;
 }
 
 /*Container for logo. Widths are for initial widths on small display*/
 .logo {
-	width: 40%;
+	width: 100%;
 	display: flex;
 	align-items: center;
 }
 
 /*Sets the properties of the page logo*/
 .logo-img {
-	width: 100px;
+	width: 250px;
 	margin: auto;
 }
 
 /*Div containing the main title of the page. Widths are initial widths on small display*/
 .title-name {
-	width: 60%;
-	text-align: right;
+	width: 100%;
+	text-align: center;
 	font-family: 'Noto Serif', serif;
-	padding-right: 1%;
 }
 
 /*Profile heading name*/
 .prof-name {
-	font-size: 22px;	
+	font-size: 22px;
 }
 
 /*Profile name description*/
 .prof-description {
-	font-size: 18px;	
+	font-size: 18px;
 }
 
 /*Div containing big full stack web development picture*/
@@ -167,50 +166,50 @@ body {
 
 /* Media queries start */
 
-/* 
-	Media query to start changing for bigger phones. 
-	Nexus 5 has a horizontal resolution of 412px.    
+/*
+	Media query to start changing for bigger phones.
+	Nexus 5 has a horizontal resolution of 412px.
 */
 @media screen and (min-width: 400px) {
 	/*Change font sizes for the main heading and description of the page*/
 	.prof-name {
-		font-size: 25px;	
+		font-size: 25px;
 	}
-	
+
 	.proj-description {
 		font-size: 16px;
 	}
 }
 
 /*
-	The media query at 600px will start changing the 
+	The media query at 600px will start changing the
 	layout for tablets. The iPad has a horizontal resolution
 	of 768px. A minor breakpoint will be added to make the
-	font size bigger. 
+	font size bigger.
 */
 
 @media screen and (min-width: 600px){
 	.project {
 		width: 100%;
 	}
-	
+
 	.proj-fig {
 		display: flex;
 		flex-wrap: wrap;
 	}
-	
+
 	.title-name {
 		width: 70%;
 	}
-	
+
 	.logo {
 		width: 30%;
 	}
-	
+
 	.logo-img {
 		margin: 0;
 	}
-	
+
 	/*
 		At this width, the project description and heading will move to the right
 		of the project image. The three projects will still be aligned vertically.
@@ -218,7 +217,7 @@ body {
 	.picture-div {
 		width: 65%;
 	}
-	
+
 	.poster {
 		padding-left: 0%;
 		padding-right: 0%;
@@ -230,11 +229,11 @@ body {
 		width: 35%;
 		padding: 0 1%;
 	}
-	
+
 	.caption-title {
 		font-size: 18px;
 	}
-	
+
 	.proj-description {
 		width: 100%;
 		padding-left: 2%;
@@ -242,7 +241,7 @@ body {
 		margin: 0;
 		font-size: 14px;
 	}
-	
+
 	.soc-media {
 		margin-top: 1%;
 	}
@@ -252,21 +251,21 @@ body {
 @media screen and (min-width: 700px) {
 	.caption-title {
 		font-size: 20px;
-		
+
 	}
-	
+
 	.proj-description {
 		font-size: 17px;
 	}
-	
+
 	.prof-name {
-		font-size: 30px;	
+		font-size: 30px;
 	}
 }
 
 /*
-	The media query at 900px will start changing the 
-	layout for desktop PCs. 
+	The media query at 900px will start changing the
+	layout for desktop PCs.
 */
 @media screen and (min-width: 900px) {
 	/*The projects are now aligned next to each other, three in one row*/
@@ -279,20 +278,20 @@ body {
 		flex-direction: column;
 		justify-content: space-between;
 	}
-	
+
 	.prof-name {
-		font-size: 35px;	
+		font-size: 35px;
 	}
-	
+
 	/*Project description again positioned below the image*/
 	.fig-caption {
 		width: 100%;
 	}
-	
+
 	.caption-title {
 		padding-top: 1%;
 	}
-	
+
 	.proj-links {
 		display: block;
 		text-align: center;
@@ -301,25 +300,25 @@ body {
 	.picture-div {
 		width: 100%;
 	}
-	
+
 	.poster {
 		padding: 0 0 2.5% 0;
 		width: 100%;
 		align-self: center;
 	}
-	
+
 	.project:first-child {
 		margin-left: 0;
 	}
-	
+
 	.project:last-child {
-		margin-right: 0;	
+		margin-right: 0;
 	}
-	
+
 	.proj-description {
 		font-size: 15px;
 	}
-	
+
 }
 
 /*At 1100px, the width stops increasing and margins start to appear*/
