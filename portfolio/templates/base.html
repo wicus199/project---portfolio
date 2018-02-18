@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+	<meta name="mobile-web-app-capable" content="yes">
+
+	<title>My Projects portfolio</title>
+	<!--Stylesheet used for the social media icons-->
+	<link rel="stylesheet" href="static/css/zocial.css">
+	<!--Main stylesheet for the -->
+	<link rel="stylesheet" href="static/css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+	<link rel="shortcut icon" type="image/png" href="images/favicon.png">
+
+</head>
+
+<body>
+	<!--This header is the main header of the page, containing the logo and name-->
+	<header class="flex-container main-header">
+		<!--This div contains the logo of the page. An svg image of the Avengers logo was used-->
+		<div class="logo">
+			<img class="logo-img" src="static/images/compLogo.png" alt="logo">
+		</div>
+
+		<!--This div contains the profile name and the profile description-->
+		<div class="title-name">
+			<h3 class="prof-description">Don't let a limited budget get in the way of your website's possibilities</h3>
+		</div>
+	</header>
+
+	{% block content %} {% endblock %}
+
+	<!--The social media footer contains the links to all the different social media profiles-->
+	<footer class="soc-media">
+		<h4 class="foot-headings">Find me on Social Media:</h4>
+		<!--The following links use the zocial css file to create social media buttons-->
+		<a href="https://www.facebook.com/wicusv?ref=bookmarks" class="zocial facebook icon" target="_blank">My facebook profile</a>
+		<a href="https://twitter.com/WWicus92" class="zocial twitter icon" target="_blank">Follow me on twitter</a>
+		<a href="https://www.linkedin.com/in/wicusvdw199" class="zocial linkedin icon" target="_blank">View my linkedIn profile</a>
+		<a href="https://plus.google.com/105572125799920856301" class="zocial googleplus icon" target="_blank">View my google+ profile</a>
+		<a href="https://www.instagram.com/wicus199/?hl=en" class="zocial instagram icon" target="_blank">Follow me on Instagram</a>
+
+		<h4 class="foot-headings">Get in touch:</h4>
+		<!--The following link links to the email address to contact the page owner-->
+		<a href="mailto:wicwebdevelopment@gmail.com" class="email">wicwebdevelopment@gmail.com</a>
+	</footer>
+
+</body>
+
+</html>
