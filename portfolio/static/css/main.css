@@ -3,6 +3,9 @@
 	box-sizing: border-box;
 }
 
+/*Udacity blue hover #148BB1
+Udacity blue #02B3E4*/
+
 /*Change background color to a light grey*/
 body {
 	background-color: white;
@@ -51,8 +54,36 @@ body {
 	font-size: 18px;
 }
 
+.links {
+	border-bottom: 3px solid black;
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+.menu-links {
+	text-decoration: none;
+	background-color: #02B3E4;
+	color: white;
+	text-align: center;
+	display: inline-block;
+	width: 80px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+
+}
+
+.menu-links:hover {
+	text-decoration: none;
+	background-color: #148BB1;
+}
+
+.menu-links:visited {
+	text-decoration: none;
+}
+
 /*Div containing big full stack web development picture*/
-.big-picture {
+.about-section {
 	width: 100%;
 }
 
