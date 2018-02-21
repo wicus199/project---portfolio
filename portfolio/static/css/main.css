@@ -37,7 +37,7 @@ body {
 }
 
 /*Div containing the main title of the page. Widths are initial widths on small display*/
-.title-name {
+.slogan-div {
 	width: 100%;
 	text-align: center;
 	font-family: 'Noto Serif', serif;
@@ -50,37 +50,70 @@ body {
 }
 
 /*Profile name description*/
-.prof-description {
+.slogan {
 	font-size: 18px;
 }
 
-.links {
-	border-bottom: 3px solid black;
-	padding-bottom: 5px;
-	margin-bottom: 5px;
-	text-align: center;
+/*////////////////////////////////////////////////////
+TODO: Do this with float instead of relative positions
+////////////////////////////////////////////////////*/
+
+.topnav {
+  overflow: hidden;
+  background-color: #02B3E4;
+  width: 100%;
 }
 
-.menu-links {
-	text-decoration: none;
-	background-color: #02B3E4;
-	color: white;
-	text-align: center;
-	display: inline-block;
-	width: 80px;
-	padding-bottom: 5px;
-	padding-top: 5px;
-
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  background-color: #02B3E4;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-.menu-links:hover {
-	text-decoration: none;
-	background-color: #148BB1;
+.topnav a:hover {
+  background-color: #148BB1;
+  color: black;
 }
 
-.menu-links:visited {
-	text-decoration: none;
+.active {
+  background-color: #4CAF50;
+  color: white;
 }
+
+
+.topnav a:not(:first-child) {
+	display: none;
+}
+
+.topnav a.icon {
+    float: right;
+    display: block;
+}
+
+.topnav.responsive {
+  	position: relative;
+}
+
+.topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+}
+
+
+/*///////////////////////////////////////////////////////
+///////////////////////////////////////////////////////*/
 
 /*Div containing big full stack web development picture*/
 .about-section {
@@ -230,12 +263,12 @@ body {
 		flex-wrap: wrap;
 	}
 
-	.title-name {
+	.slogan-div {
 		width: 60%;
 		align-items: center;
 	}
 
-	.prof-description {
+	.slogan {
 		font-size: 25px;
 	}
 
@@ -246,6 +279,18 @@ body {
 	.logo-img {
 		margin: 0;
 		width: 300px;
+	}
+
+	.topnav {
+		width: 100%;
+	}
+
+	.topnav a:not(:first-child) {
+  		display: block;
+	}
+
+	.topnav .icon {
+  		display: none !important;
 	}
 
 	/*

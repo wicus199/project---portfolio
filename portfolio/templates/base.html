@@ -27,18 +27,22 @@
 		</div>
 
 		<!--This div contains the profile name and the profile description-->
-		<div class="title-name">
-			<h3 class="prof-description">Don't let a limited budget get in the way of your website's possibilities</h3>
+		<div class="slogan-div">
+			<h3 class="slogan">
+				Don't let a budget limit your website's possibilities
+			</h3>
 		</div>
+
+		<div class="topnav" id="myTopnav">
+			<a class="active" href="{{ url_for('index') }}">Home</a>
+			<a href="{{ url_for('projects') }}">Projects</a>
+			<a href="{{ url_for('about') }}">About</a>
+			<a href="{{ url_for('contact') }}">Contact Us</a>
+			<a href="javascript:void(0);" class="icon" onclick="topNavFunction()">&#9776;</a>
+		</div>
+		
+
 	</header>
-
-	<section class="links">
-		<a class="menu-links" href="/home">Home</a>
-		<a class="menu-links" href="/projects">Projects</a>
-		<a class="menu-links" href="/about">About</a>
-		<a class="menu-links" href="/contact">Contact Us</a>
-
-	</section>
 
 	{% block content %} {% endblock %}
 
@@ -52,11 +56,20 @@
 		<a href="https://plus.google.com/105572125799920856301" class="zocial googleplus icon" target="_blank">View my google+ profile</a>
 		<a href="https://www.instagram.com/wicus199/?hl=en" class="zocial instagram icon" target="_blank">Follow me on Instagram</a>
 
-		<h4 class="foot-headings">Get in touch:</h4>
-		<!--The following link links to the email address to contact the page owner-->
-		<a href="mailto:wicwebdevelopment@gmail.com" class="email">wicwebdevelopment@gmail.com</a>
-	</footer>
+	<script>
+		function topNavFunction() {
+		    var x = document.getElementById("myTopnav");
+		    if (x.className === "topnav") {
+		        x.className += " responsive";
+		    } else {
+		        x.className = "topnav";
+		    }
+		}
+
+	</script>
 
 </body>
+
+
 
 </html>
